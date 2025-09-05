@@ -1,0 +1,39 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    background: #08914c;
+}
+
+/* Animal card highlight (Lab 2 style) */
+.wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #111;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 2px 6px;
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
